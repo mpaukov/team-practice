@@ -62,7 +62,7 @@ img {
   background-image: url('../images/summer.jpg');
   z-index: 3;
   transition: 2000ms;
-  clip-path: polygon(0 100%, 0 0, 0 0, 50% 50%);
+  clip-path: polygon(0 100%, 0 0, 100% 0, 50% 50%);
 }
 .autumn {
   background-image: url('../images/autumn.jpg');
@@ -71,4 +71,15 @@ img {
   clip-path: polygon(0 100%, 50% 50%, 100% 0, 100% 100%);
 }
 .winter {
+  background-image: url('../images/winter.jpeg');
+  z-index: 2;
+  transition: 2000ms;
+  clip-path: polygon(0 100%, 0 0, 50% 50%, 100% 100%);
+}
+.spring:hover,
+.summer:hover,
+.autumn:hover,
+.winter:hover {
+  clip-path: polygon(0 0%, 100% 0, 100% 100%, 0% 100%);
+  z-index: 5;
 }
