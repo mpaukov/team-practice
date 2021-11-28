@@ -59,8 +59,16 @@ img {
   clip-path: polygon(0 100%, 0 0, 0 0, 50% 50%);
 }
 .summer {
+  background-image: url('../images/summer.jpg');
+  z-index: 3;
+  transition: 2000ms;
+  clip-path: polygon(0 100%, 0 0, 0 0, 50% 50%);
 }
 .autumn {
+  background-image: url('../images/autumn.jpg');
+  z-index: 1;
+  transition: 2000ms;
+  clip-path: polygon(0 100%, 50% 50%, 100% 0, 100% 100%);
 }
 .winter {
 }
